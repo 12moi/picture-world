@@ -1,3 +1,5 @@
+
+
 from django.shortcuts import render
 from .models import Image, Location
 # Create your views here.
@@ -23,9 +25,3 @@ def search_results(request):
     else:
         message = "You haven't searched for any image category"
         return render(request, 'pictures/search_results.html', {"message": message})
-
-
-
-
-
-
