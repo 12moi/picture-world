@@ -3,8 +3,6 @@
 from django.db import models
 
 # Create your models here.
-from django.db import models
-
 
 class Category(models.Model):
     name = models.CharField(max_length=50)
@@ -17,7 +15,6 @@ class Category(models.Model):
 
     def delete_category(self):
         self.delete()
-
 
 class Location(models.Model):
     name = models.CharField(max_length=60)
@@ -80,3 +77,4 @@ class Image(models.Model):
 
     class Meta:
         ordering = ['date']
+        
