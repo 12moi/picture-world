@@ -1,5 +1,5 @@
 h2 {
-    color:white;
+    /* color:white; */
     margin-top:2%;
     font-size:35px;
     font-family: 'Special Elite', cursive;
@@ -40,16 +40,16 @@ h2 {
     
     .modalcard{
     background-color:rgba(10,10,10,0.8);
-    color:white;
+    /* color:white; */
     padding:3%;
     border:none;
     }
     h3{
-    color:white;
+    /* color:white; */
     font-family: 'Special Elite', cursive;
     }
     #locations{
-    color:white;
+    /* color:white; */
     font-family: 'Special Elite', cursive;
     }
     hr{
