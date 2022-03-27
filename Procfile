@@ -1,3 +1,2 @@
 
-
-web: gunicorn (Your app).wsgi
+web: gunicorn pictureshare.wsgi
