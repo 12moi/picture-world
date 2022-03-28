@@ -2,6 +2,7 @@
 
 
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
@@ -40,7 +41,7 @@ class Location(models.Model):
 
 
 class Image(models.Model):
-    image = models.ImageField(upload_to='images/')
+    image = CloudinaryField("image")
     name = models.CharField(max_length=60)
     description = models.TextField()
     author = models.CharField(max_length=40, default='admin')
