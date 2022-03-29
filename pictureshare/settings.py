@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
-# from pathlib import Path
+from pathlib import Path
 import dj_database_url
 from decouple import config,Csv
 import django_heroku
@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-4ao1!uka%1@vyn(&5j@-)-59xc+bgv(33fy_rq8vxg++xii+)+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pictures'
+    'pictures',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [

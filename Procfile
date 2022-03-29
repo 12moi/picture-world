@@ -1,2 +1,2 @@
 
-web: gunicorn pictureshare.wsgi
+web: gunicorn pictureshare.wsgi --log-file -
